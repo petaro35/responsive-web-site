@@ -1,0 +1,206 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 7px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;/*çarpan*/
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    
+        
+}
+
+.fas .fa-tint{
+    color: pink;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem;
+
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+
+
+}
+
+.clearfix::after{/*boş bir eleman oluşturup yok ediyoruz*/
+    content: "";
+    display:block ;/*tüm satırı kaplamalı*/
+    clear: both;
+}
+
+header{
+    height: 46rem;
+    
+}
+header .background-img{
+    position: absolute;
+    background-image: url(/images/2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;/*görseli bir arka sıraya alır bu şekilde yazı opacitryden etkielnmez*/
+
+}
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+
+    
+
+}
+
+
+.btn{
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    background-color: #333;
+    color: white;
+    border: #666 1px solid;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.7s;/*yavaş bir değişim için*/
+}
+.btn:hover{
+
+    background-color: #fff;
+    color: #333;
+
+}
+
+
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+    
+}
+#section-b{
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+#section-b ul{
+    list-style: none;
+}
+#section-b li{
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+
+}
+#section-c{
+    background-color:#eaeaea ;
+    color: #333;
+    padding: 5rem;
+
+}
+.col-content{
+    padding: 1.5rem 0;
+}
+.content{
+    -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        
+}
+#insta{
+    width: 20px;
+    height: 20px;
+}
+#yt{
+    width: 20px;
+    height: 20px;
+}
+
+#section-d .box{
+
+    padding: 5rem;
+}
+#section-d .box:first-child{
+    background-color:#113b72 ;
+}
+footer{
+    background-color: black;
+    padding: 4rem;
+  
+    
+    ;
+}
+footer a{
+    color: yellowgreen;
+    width: 30px;
+    height: 10px;
+    padding: 0;
+}
+#peta{
+    float:right;
+}
+.video{
+    width: 920;
+    height: auto;
+    max-width: 100%;
+    
+    
+}
+
+
+@media screen and (min-width:800px) {/*breakpointimiz 800px ve üzeri ne olsun demektir...*/
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px)   {
+    html{
+        font-size: 11px;
+    }
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+       
+
+    }
+    .box{
+        
+        width: 50%;
+        float: left;
+        
+        
+    }
+    
+    
+    
+        
+    
+}
+
+
